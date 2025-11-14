@@ -1,16 +1,40 @@
-# React + Vite
+# HabitTracker
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[Live Site](https://your-live-site-url.com)  
 
-Currently, two official plugins are available:
+HabitTracker is a modern, responsive web application that helps users track and build healthy habits. Users can create, browse, and manage habits while following daily tips and insights for personal growth.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Track Your Habits:** Add and manage your daily habits with ease.
+- **Browse Public Habits:** Discover habits shared by other users to get inspired.
+- **Progress Tracking:** View details and progress of each habit.
+- **Dark/Light Mode:** Toggle between dark and light themes for a comfortable viewing experience.
+- **Responsive Design:** Fully responsive UI that works seamlessly on desktop, tablet, and mobile devices.
+- **Daily Tips & Success Stories:** Stay motivated with curated tips and real user testimonials.
+- **Authentication:** Secure login and signup with Firebase Authentication.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Tech Stack
+
+- **Frontend:** React.js, Tailwind CSS, Framer Motion
+- **Backend:** Node.js, Express.js
+- **Database:** MongoDB (Atlas)
+- **Authentication:** Firebase Authentication
+- **Hosting:** Vercel / Netlify / Your choice
+
+---
+
+## Getting Started
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/habittracker.git
+cd habittracker
+npm install
+Run the development server:
+
+npm run dev
