@@ -3,14 +3,14 @@ import React, { useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import { auth } from "../firebaseconfig";
-import API from "../api/axiosInstance"; // Use your axios instance
-import LoadingSpinner from "../components/LoadingSpinner"; // Spinner component
+import API from "../api/axiosInstance";
+import LoadingSpinner from "../components/LoadingSpinner";
 
 export default function UpdateHabit() {
   const { id } = useParams();
   const navigate = useNavigate();
-
   const user = JSON.parse(localStorage.getItem("user"));
+
   const [habit, setHabit] = useState({
     title: "",
     desc: "",
@@ -47,7 +47,6 @@ export default function UpdateHabit() {
 
   const handleUpdate = async (e) => {
     e.preventDefault();
-
     try {
       const token = await auth.currentUser.getIdToken();
       let payload;
@@ -88,7 +87,7 @@ export default function UpdateHabit() {
   return (
     <div className="min-h-screen bg-gray-900 flex justify-center py-10 px-4 pt-24">
       <div className="w-full max-w-lg bg-gray-800 rounded-xl shadow-2xl p-8 space-y-6 border border-indigo-900/50">
-        <h2 className="text-3xl font-bold text-white text-center mb-4">Update Habit</h2>
+        <h2 className="text-3xl font-bold text-white text-center">Update Habit</h2>
 
         {/* User Info */}
         <div className="grid grid-cols-1 gap-4 mb-4">
@@ -158,7 +157,7 @@ export default function UpdateHabit() {
           {habit.image && (
             <div className="mt-4">
               <p className="text-gray-300 font-semibold mb-2">Old Image:</p>
-              <img src={habit.image} alt="Old Habit" className="w-32 h-32 object-cover rounded-md" />
+              <img src={habit.image} alt="Old Habit" className="w-32 h-32 object-cover rounded-md border border-gray-600" />
             </div>
           )}
 
@@ -172,9 +171,10 @@ export default function UpdateHabit() {
             />
           </div>
 
+          {/* Update Button */}
           <button
             type="submit"
-            className="w-full py-3 bg-indigo-600 text-white font-semibold rounded-lg hover:bg-indigo-700 transition mt-4"
+            className="w-full py-3 bg-indigo-600 text-white font-semibold rounded-lg hover:bg-indigo-700 transition shadow-md hover:scale-105"
           >
             Update Habit
           </button>
