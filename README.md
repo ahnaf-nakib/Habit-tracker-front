@@ -1,6 +1,6 @@
 # HabitTracker
 
-[Live Site](https://your-live-site-url.com)  
+[Live Site](https://https://habit-tracker00.netlify.app/.com)  
 
 HabitTracker is a modern, responsive web application that helps users track and build healthy habits. Users can create, browse, and manage habits while following daily tips and insights for personal growth.
 
