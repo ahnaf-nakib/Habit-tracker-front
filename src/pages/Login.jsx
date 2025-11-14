@@ -54,7 +54,7 @@ function Login() {
                 
                 {/* Header */}
                 <h2 className="text-3xl font-bold text-white text-center">Welcome Back</h2>
-                <p className="text-gray-400 text-center">Sign in to track your progress.</p>
+                <p className="text-gray-400 text-center">Login to track your progress.</p>
 
                 {/* Main Form */}
                 <form onSubmit={handleLogin} className="space-y-4">
