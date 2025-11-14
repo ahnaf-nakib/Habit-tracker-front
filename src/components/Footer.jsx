@@ -50,7 +50,7 @@ function Footer() {
                     <div className="col-span-2 md:col-span-1 space-y-4">
                         <h3 className="text-lg font-semibold text-white uppercase tracking-wider">Contact</h3>
                         <address className="space-y-2 text-sm not-italic">
-                            <p>Email: <a href="mailto:support@habittracker.com" className="hover:text-indigo-400 transition-colors">support@habittracker.com</a></p>
+                            <p>Email: <a href="mailto:support@habittr*****.com" className="hover:text-indigo-400 transition-colors">support@habittracker.com</a></p>
                             <p>Phone: +880 1XXXXXXXXX</p>
                             <p>Address: Dhaka, Bangladesh</p>
                         </address>
